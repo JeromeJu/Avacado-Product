@@ -1,0 +1,24 @@
+name: 'Random Greeting'
+
+on:
+  workflow_dispatch:
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generate Random Number
+        id: random-number-generator
+        run: echo "::set-output name=random-id::$(echo $RANDOM)"
+
+      - name: Choose Greeting
+        run: |
+          if [[ ${{ steps.random-number-generator.outputs.random-id }} -gt 16383 ]]; then
+            echo "::set-output name=greeting::Hello!"
+          else
+            echo "::set-output name=greeting::Howdy!"
+          fi
+
+      - name: Display Greeting
+        run: echo "${{ steps.choose-greeting.outputs.greeting }}"
