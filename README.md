@@ -7,7 +7,9 @@ Welcome to Avacado Product! This project aims to introduce the Avacado product t
 
 ## Key Features
 
-- **Feature 1:** TBD
+- **Feature 1:** Interactive Rating Form: Users can easily rate products on a 5-star scale and provide optional written reviews through a user-friendly modal window.
+- **Feature 2:** Review Submission and Display: Submitted reviews are promptly displayed on the relevant product pages, enriching the information available to other potential buyers.
+- **Feature 3:** Enhanced User Experience: The ability to rate and review products directly on Avocado fosters a sense of community and empowers users to make informed purchasing decisions.
 
 ## Getting Started
 
